@@ -1,0 +1,20 @@
+LAB 01 - AULA 02 (MLCB): Classificador de Intenções
+
+
+
+--- RESULTADOS DO LAB 01 ---
+Mensagem: 'Quero consultar quanto dinheiro tenho' ==> Intenção Predita: [consultar_saldo]
+
+
+Mensagem: 'Pode me ajudar a fazer um pix?' ==> Intenção Predita: [fazer_pix]
+
+
+Mensagem: 'Gostaria de cancelar meu cartão de crédito' ==> Intenção Predita: [cancelar_conta]
+
+
+
+LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
+
+
+
+
