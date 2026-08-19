@@ -1,5 +1,5 @@
 ============================================================
-LAB 01 - AULA 02 (MLCB): Classificador de Intenções
+  LAB 01 - AULA 02 (MLCB): Classificador de Intenções
 ============================================================
 
 1 - Avaliem os resultados e verifiquem se os resultados foram corretos ou incorretos. Coloque a resposta no arquivo do relatório do laboratório
@@ -19,8 +19,8 @@ LAB 01 - AULA 02 (MLCB): Classificador de Intenções
 
 
 ============================================================
- LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
- ============================================================
+   LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
+============================================================
 
 # 1 - Avaliem os resultados e verifiquem se os resultados foram corretos ou incorretos. Coloque a resposta no arquivo do relatório do laboratório
   R: Foi apresentado erro diante a falta da mensagem no campo iniciado dos possiveis motivos de contato, a 
@@ -39,5 +39,26 @@ Intenção Predita: troca_devolucao
 Classe [duvida_frete]: 18.68%
 Classe [rastrear_pedido]: 17.79%
 Classe [troca_devolucao]: 63.53%
+
+
+============================================================
+   LAB 03 - AULA 02 (MLCB): Preencha os blocos TODO
+============================================================
+
+
+1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
+  R: Aproximadamente 3 dos 9 acertos são separados do teste e os outros 6 são para o treinamento, por tanto a porcentagem final deste teste foi de 33,33%.
+
+
+2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
+  R: A Árvore de decisão transforma as mensagens em números, assim ele procura os processos de treinamento e procura suas divisões, para separar melhor as diferenças de classe.
+
+3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
+  R: O risco é o overfiting.
+
+
+
+
+
 
 
