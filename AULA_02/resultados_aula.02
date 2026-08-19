@@ -57,6 +57,43 @@ Classe [troca_devolucao]: 63.53%
   R: O risco é o overfiting.
 
 
+================================================================================
+LAB 04 - AULA 02 (MLCB): DESAFIO NLU PARA AGÊNCIA DE VIAGENS (DO ZERO)
+================================================================================
+
+
+Dataset:
+                                                frase          intencao
+0           Quero comprar uma passagem para São Paulo  comprar_passagem
+1   Gostaria de reservar um voo para o Rio de Janeiro  comprar_passagem
+2               Preciso comprar uma passagem de avião  comprar_passagem
+3                 Quero fazer uma reserva de passagem  comprar_passagem
+4                        Quero cancelar minha reserva  cancelar_reserva
+5                            Preciso cancelar meu voo  cancelar_reserva
+6               Como faço para cancelar uma passagem?  cancelar_reserva
+7                   Gostaria de cancelar minha viagem  cancelar_reserva
+8                        Quero falar com um atendente   falar_atendente
+9                        Preciso falar com uma pessoa   falar_atendente
+10              Pode me encaminhar para um atendente?   falar_atendente
+11                           Quero atendimento humano   falar_atendente
+
+Acurácia do modelo: 0.6666666666666666
+
+Predições das frases inéditas:
+Frase: Gostaria de adquirir um bilhete para minha viagem
+Intenção prevista: cancelar_reserva
+--------------------------------------------------
+Frase: Não quero mais minha reserva de voo
+Intenção prevista: cancelar_reserva
+--------------------------------------------------
+Frase: Preciso conversar com alguém do atendimento
+Intenção prevista: falar_atendente
+--------------------------------------------------
+
+Para desenvolver o protótipo, escolhi o Pandas para organizar as frases em um DataFrame.
+Utilizei o `train_test_split` para separar os dados de treino e teste, o `TfidfVectorizer` para transformar os textos em números 
+e a `LogisticRegression` para identificar a intenção de cada frase. Essas ferramentas foram escolhidas por serem simples de implementar e adequadas para um projeto 
+inicial de classificação de textos. Por fim, testei o modelo com frases novas para verificar se ele conseguia identificar corretamente as intenções.
 
 
 
