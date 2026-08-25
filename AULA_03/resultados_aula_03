@@ -2,6 +2,15 @@
 #   LAB 01 - AULA 03 (MLCB): Pré-processamento e Stopwords
 # ============================================================
 
+1 - Qual o impacto da remoção de stopwords no tamanho do vocabulário do modelo?
+R: A remoção das palavras aplicadas na Stopwords, faz com que palavras repetitivas ou desnecessarias, não sejam utilizadas.
+
+2 - O que significa a configuração ngram_range=(1, 2) no TfidfVectorizer?
+R: Ele considera palavras individuais e pares como palavras consecutivas.
+
+3 - Como a remoção de palavras genéricas ajuda a evitar classificações incorretas?
+R: Ela ajuda porque evita que o modelo dê muita importância a palavras que aparecem em várias situações.
+
 --- RESULTADOS DO LAB 01 (AULA 03) ---
 Mensagem: 'Preciso urgente da segunda via da fatura'
 Intenção Predita: [segunda_via]
