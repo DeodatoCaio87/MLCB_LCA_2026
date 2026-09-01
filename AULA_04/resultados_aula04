@@ -1,1 +1,49 @@
+Relatório de Avaliação NLU - SAC Móveis Residenciais
+1. Tabela Comparativa de Métricas (Dados de Teste)
+=== RELATÓRIO DE CLASSIFICAÇÃO - KNN === precision recall f1-score support
 
+logistica_entregas 1.00 1.00 1.00 6 reclamacoes 1.00 1.00 1.00 6 suporte 1.00 1.00 1.00 6 trocas_devolucoes 1.00 1.00 1.00 6 vendas 1.00 1.00 1.00 6
+
+      accuracy                           1.00        30
+     macro avg       1.00      1.00      1.00        30
+  weighted avg       1.00      1.00      1.00        30
+=== MATRIZ DE CONFUSÃO - KNN === [[6 0 0 0 0] [0 6 0 0 0] [0 0 6 0 0] [0 0 0 6 0] [0 0 0 0 6]]
+
+
+
+2. Análise dos Testes de Entrada (input())
+Decision Tree treinada com sucesso!
+
+=== MATRIZ DE CONFUSÃO - DECISION TREE === [[4 0 0 0 2] [1 4 1 0 0] [0 0 6 0 0] [0 0 1 5 0] [0 0 0 1 5]]
+
+=== RELATÓRIO DE CLASSIFICAÇÃO - DECISION TREE === precision recall f1-score support
+
+logistica_entregas 0.80 0.67 0.73 6 reclamacoes 1.00 0.67 0.80 6 suporte 0.75 1.00 0.86 6 trocas_devolucoes 0.83 0.83 0.83 6 vendas 0.71 0.83 0.77 6
+
+      accuracy                           0.80        30
+     macro avg       0.82      0.80      0.80        30
+  weighted avg       0.82      0.80      0.80        30
+=== INICIANDO BATERIA DE TESTES (8 INPUTS OBRIGATÓRIOS) ===
+
+[Teste 1/8] Digite a frase do cliente: Quero comprar um guarda roupa Intenção identificada: trocas_devolucoes Probabilidade: 100.00%
+
+[Teste 2/8] Digite a frase do cliente: asdasdasdasd Desculpe, não entendi sua solicitação. Encaminhando você para um atendente humano...
+
+[Teste 3/8] Digite a frase do cliente: O SAC não responde Intenção identificada: trocas_devolucoes Probabilidade: 100.00%
+
+[Teste 4/8] Digite a frase do cliente: Qual o prazo de entrega? Intenção identificada: vendas Probabilidade: 100.00%
+
+[Teste 5/8] Digite a frase do cliente: Onde está meu pedido? Intenção identificada: logistica_entregas Probabilidade: 100.00%
+
+[Teste 6/8] Digite a frase do cliente: Meu produto chegou quebrado Intenção identificada: logistica_entregas Probabilidade: 100.00%
+
+[Teste 7/8] Digite a frase do cliente: Quero devolver uma mesa Intenção identificada: trocas_devolucoes Probabilidade: 100.00%
+
+[Teste 8/8] Digite a frase do cliente: Preciso do manual da estante Intenção identificada: suporte Probabilidade: 100.00%
+
+
+
+3. Veredito Final
+Melhor modelo para este projeto: KNN
+
+Justificativa técnica: O KNN apresentou um melhor desempenho no processo de verificação aplicado na analise efetuada pelo sistema.
