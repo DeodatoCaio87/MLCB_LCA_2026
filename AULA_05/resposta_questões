@@ -1,0 +1,16 @@
+Questão 1 - Qual modelo apresentou melhor desempenho?
+-O melhor resultado foi o Precision, de acordo com base na tabela.
+
+Questão 2 - Por que os resultados podem ser diferentes mesmo utilizando os mesmos embeddings?
+-Os resultados podem ser diferentes porque Regressão Logistíca e o KNN utilizam estratégias diferentes para realizar as classificações.
+
+Questão 3 - O KNN utiliza distância. Por que a qualidade dos embeddings é particularmente importante para esse algoritmo?
+-Porque o KNN depende diretamente da distância entre os vetores para determinar quais exemplos são mais semelhantes.
+Se os embeddings forem de baixa qualidade, mensagens de intenções diferentes podem ficar próximas no espaço vetorial, 
+enquanto mensagens de mesma intenção podem ficar distantes.
+
+Questão 4 - Se o sistema tivesse 100 mil mensagens e centenas de intenções, você escolheria KNN? Justifique.
+-Não escolheria o KNN, pois, com 100 mil mensagens e centenas de interações, o KNN ficaria mais custoso.
+
+Questão 5 - Qual modelo você escolheria para colocar em produção neste cenário?
+-Eu escolheria a Regressão Logística, principalmente se ela apresentar desempenho igual ou superior ao KNN nos testes.
