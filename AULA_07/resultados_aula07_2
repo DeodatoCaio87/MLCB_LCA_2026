@@ -1,0 +1,32 @@
+LABORATÓRIO 2 — TRIAGEM DE CHAMADOS COM NAIVE BAYES
+Objetivo
+
+Implementar um sistema de triagem utilizando Multinomial Naive Bayes (MultinomialNB), realizando:
+
+Pré-processamento;
+Remoção de stopwords;
+Vetorização TF-IDF;
+Classificação probabilística;
+Extração de protocolo por Regex;
+Sistema de fallback por nível de confiança.
+Código executado
+
+O laboratório foi implementado utilizando TfidfVectorizer e MultinomialNB.
+
+Teste realizado
+
+Entrada:
+
+Urgente: servidor caiu no protocolo INC-9982
+Output
+{'status': 'FALLBACK', 'mensagem': 'Não foi possível classificar o chamado com segurança.'}
+
+Resultado esperado
+
+O sistema deve identificar a intenção:
+
+incidente_critico
+
+e extrair o protocolo:
+
+INC-9982
