@@ -1,0 +1,29 @@
+LABORATÓRIO 1 — NLU BANCÁRIO COM REGRESSÃO LOGÍSTICA
+Objetivo
+
+Implementar um pipeline de NLU utilizando Regressão Logística (LogisticRegression), incluindo:
+
+Pré-processamento dos textos;
+Remoção de stopwords;
+Vetorização TF-IDF;
+Treinamento do modelo;
+Classificação probabilística;
+Extração de valores monetários utilizando Regex;
+Mecanismo de fallback baseado em confiança.
+Código executado
+
+O laboratório foi implementado utilizando TfidfVectorizer e LogisticRegression.
+
+Teste realizado
+
+Entrada:
+
+Quero fazer um pix de 500 reais
+Output
+{'status': 'SUCESSO', 'intencao': np.str_('transferencia'), 'confianca': np.float64(0.5840980216002639), 'valor': 500.0}
+
+Resultado esperado
+
+O sistema deve identificar a intenção correspondente à transferência e extrair o valor:
+
+valor: 500.0
